@@ -1,4 +1,4 @@
-# easyMeasure.setKeyTrigger()
+# easyMeasure.setTriggerKey()
 
 |                      | &nbsp; 
 | -------------------- | ---------------------------------------------------------------
@@ -15,7 +15,7 @@ The key 'c' is used as a default trigger key for _easyMeasure_. However, you can
 
 ## Syntax
 
-	easyMeasure.setKeyTrigger( keyName )
+	easyMeasure.setTriggerKey( keyName )
 
 ##### keyName <small>(required)</small>
 _[keyName](https://docs.coronalabs.com/api/event/key/keyName.html)._ The string representing the key that will trigger easyMeasure on/off.
@@ -25,5 +25,5 @@ _[keyName](https://docs.coronalabs.com/api/event/key/keyName.html)._ The string 
 ``````lua
 local easyMeasure = require 'plugin.easyMeasure'
 
-easyMeasure.setKeyTrigger('m')
+easyMeasure.setTriggerKey('m')
 ``````

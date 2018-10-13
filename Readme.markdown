@@ -9,13 +9,14 @@
 
 ## Overview
 
-Hi there! Welcome to the documentation for [Easy Measure](http://store.coronalabs.com/plugin/easyMeasure). 
+Hi there! Welcome to the documentation for [Easy Measure](http://store.coronalabs.com/plugin/easyMeasure). Easy Measure is a plugin for the [Corona](https://coronalabs.com/products/corona-sdk/) Simulator. 
 
-Easy Measure is a plugin for the [Corona](https://coronalabs.com/products/corona-sdk/) Simulator. Having to repeatedly reload our Corona project to see if we'd coded our UI positions, sizes and angles correctly was a bit of a pain. So we made this plugin as a helper to measure and call out these values in Corona simulator using the mouse cursor. 
+Needing to repeatedly reload our Corona project to see if we'd coded our UI positions, sizes and angles correctly was a bit of a pain. So we made this plugin as a helper to measure and call out these values in Corona simulator via the mouse cursor and keyboard.
 
 
 ## Syntax
 ``````lua
+
 	local easyMeasure = require "plugin.easyMeasure"
 
 ``````
@@ -64,7 +65,7 @@ Since the plugin is meant for use on the Simulator, remove the above entry from 
 
 * This uses Corona's 'mouse' events. All the gotchas of mouse events apply. 
 
-* This is meant as a Simulator helper. The plugin will NOT activate on device builds.
+* This is meant as a Simulator helper. The plugin will deliberately NOT activate on device builds.
 
 
 ### Support

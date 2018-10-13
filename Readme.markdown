@@ -22,7 +22,7 @@ Easy Measure is a plugin for the [Corona](https://coronalabs.com/products/corona
 
 ### Functions
 
-##### [easyMeasure.setKeyTrigger()](setKeyTrigger.markdown)
+##### [easyMeasure.setTriggerKey()](setTriggerKey.markdown)
 
 ##### [easyMeasure.activate()](activate.markdown)
 

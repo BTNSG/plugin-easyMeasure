@@ -1,10 +1,10 @@
-# mouseHover.setScope()
+# easyMeasure.setKeyTrigger()
 
 |                      | &nbsp; 
 | -------------------- | ---------------------------------------------------------------
 | __Type__             | [function](http://docs.coronalabs.com/api/type/Function.html)
-| __Library__          | [mouseHover.*](Readme.markdown)
-| __Return value__     | [Table](http://docs.coronalabs.com/api/type/Table.html)
+| __Library__          | [easyMeasure.*](Readme.markdown)
+| __Return value__     | None
 | __Keywords__         | None
 
 
@@ -17,39 +17,15 @@ By default the scope is set to Corona's display [stage](https://docs.coronalabs.
 
 ## Syntax
 
-	mouseHover.setScope( displayGroup )
+	easyMeasure.setKeyTrigger( keyName )
 
-##### displayGroup <small>(required)</small>
-_[GroupObject](https://docs.coronalabs.com/api/library/display/newGroup.html)._ The display group that you want to set as the _scope_ for checking hover events.
+##### keyName <small>(required)</small>
+_[keyName](https://docs.coronalabs.com/api/event/key/keyName.html)._ The string representing the key that will trigger easyMeasure on/off.
 
 ## Example
 
 ``````lua
-local mouseHover = require 'plugin.mouseHover'
+local easyMeasure = require 'plugin.easyMeasure'
 
-local halfW = display.contentWidth * 0.5
-local halfH = display.contentHeight * 0.5
-
-
-local testGroup = display.newGroup()
-testGroup.anchorChildren = true
-testGroup.x = halfW
-testGroup.y = halfH
-
-mouseHover.setScope(testGroup)
-
-local circle = display.newCircle(halfW*0.5, halfH*0.5, halfW*0.1)
-circle.rotation = -50
-circle.fill = {0,0.3,0.4}
-circle.alpha = defaultAlpha
-circle.xScale = 5
-circle.yScale = 1.5
-
-testGroup:insert(circle)
-
-local onCircHover = function(event)
-	print("circleHover", event.phase)
-end
-
-circle:addEventListener( "mouseHover", onCircHover )
+easyMeasure.setKeyTrigger('m')
 ``````

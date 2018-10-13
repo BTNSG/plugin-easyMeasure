@@ -4,8 +4,8 @@
 | -------------------- | ---------------------------------------------------------------
 | __Type__             | [Plugin](https://docs.coronalabs.com/plugin/)
 | __Corona Store__     | [easyMeasure](http://store.coronalabs.com/plugin/easyMeasure)
-| __Keywords__         | 
-| __See also__         | 
+
+
 
 ## Overview
 
@@ -22,13 +22,13 @@ Easy Measure is a plugin for the [Corona](https://coronalabs.com/products/corona
 
 ### Functions
 
-##### [mouseHover.setScope()](setScope.markdown)
+##### [easyMeasure.setKeyTrigger()](setKeyTrigger.markdown)
 
-##### [mouseHover.activate()](activate.markdown)
+##### [easyMeasure.activate()](activate.markdown)
 
-##### [mouseHover.deactivate()](deactivate.markdown)
+##### [easyMeasure.deactivate()](deactivate.markdown)
 
-##### [mouseHover.unRequire()](unRequire.markdown)
+##### [easyMeasure.unRequire()](unRequire.markdown)
 
 
 

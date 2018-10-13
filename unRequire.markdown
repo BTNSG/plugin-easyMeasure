@@ -1,22 +1,22 @@
-# mouseHover.unRequire()
+# easyMeasure.unRequire()
 
 |                      | &nbsp; 
 | -------------------- | ---------------------------------------------------------------
 | __Type__             | [function](http://docs.coronalabs.com/api/type/Function.html)
-| __Library__          | [mouseHover.*](Readme.markdown)
+| __Library__          | [easyMeasure.*](Readme.markdown)
 | __Return value__     | None
 
 
 
 ## Overview
 
-When you no longer need to use the *mouseHover* plugin, you can _unrequire_ it by calling _mouseHover.unRequire()_. This function [deactivates](deactivate.markdown) the plugin and _nils_ out all the references to it in [package.loaded](https://docs.coronalabs.com/api/library/package/loaded.html).
+When you no longer need to use the *easyMeasure* plugin, you can _unrequire_ it by calling _easyMeasyre.unRequire()_. This function [deactivates](deactivate.markdown) the plugin and _nils_ out all the references to it in [package.loaded](https://docs.coronalabs.com/api/library/package/loaded.html).
 
 
 
 ## Syntax
 
-	mouseHover.unRequire( )
+	easyMeasure.unRequire( )
 
 
 ## Note
@@ -26,11 +26,11 @@ In order for the _unrequiring_ to actually free up memory, you'll have to also _
 ## Examples
 
 ``````lua
-local myMouseHover = require 'plugin.mouseHover'
+local easyMeasure = require 'plugin.easyMeasure'
 
 -- 11,532 lines of code later
 
-myMouseHover.unRequire()
-myMouseHover = nil
+easyMeasure.unRequire()
+easyMeasure = nil
 
 ``````
